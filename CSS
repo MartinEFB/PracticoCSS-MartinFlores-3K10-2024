@@ -1,0 +1,179 @@
+.Fondo{
+    background-color: rgb(192, 192, 192);
+    padding: 20px;
+}
+    .box{
+        padding: 20px;
+        background-color: white;
+        border-radius: 1rem;
+        margin-top: 20px;
+        margin-left: 120px;
+        margin-right: 120px;
+        align-content: center;
+        align-items: center;
+        box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3); 
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        .Encabezado{
+            background-color: rgb(51, 51, 51);
+            padding: 0.4rem;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+            text-align: center;
+            align-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+.linea{
+    height: 2px;
+    background: black;
+    background-image: linear-gradient(to right, #333, #333, #333);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.p1{
+    text-decoration: underline;
+    text-align: justify;
+    font-size: 20px
+}
+.blockquote {
+    font-style: italic;
+    font-size: 20px;
+    text-align: left;
+    background-color: #d4d4d4;
+    padding: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-left: 8px solid #6d6d6d;
+}
+.box1{
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 0.4rem;
+    border:1px solid black;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3) ;
+}
+.box2{
+    padding: 20px;
+    background-color: rgb(255, 194, 28);
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 0.4rem;
+    border: 4px solid rgb(0, 0, 0);
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.3) ;
+}
+.relativo {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    background-color: rgb(186, 248, 227);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.absoluto {
+    position: absolute;
+    bottom: -25px ;
+    left: 49%;
+    background-color: rgb(3, 179, 179);
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.containerGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 0.2rem;
+    justify-content: center;
+    
+}
+.grid-item{
+    padding: 5px;
+    background-color: rgb(190, 0, 190);
+    border-radius: 0.5rem;
+    margin: 5px;
+    align-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    height: 30px;
+}
+
+.mover{
+    border-radius: 10rem;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 10px;
+    animation: mover 3s infinite;
+    padding: 20px;
+    margin: 50px;
+}
+.animacion{
+    background-color: red;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    transition: 1.0s;
+}
+.animacion:hover{
+    cursor: pointer;
+    background-color: rgb(38, 38, 252);
+    width: 250px;
+    height: 250px;
+}
+@keyframes mover{
+    0%  {
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translate(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@media (max-width: 768px){
+    
+    .Fondo{
+        background-color: #854a94;
+        
+    }
+    .h1{
+        font-size: 20px;
+    }
+    .Encabezado{
+        background-color: rgb(36, 36, 36);
+    padding: 0.4rem;
+    color: aliceblue;
+    font-size: 1vw;
+    text-align: center;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    .box{
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin: 10px;
+    align-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3); 
+    }
+    @keyframes mover{
+        0%  {
+            transform: translateX(0px);
+        }
+        50%{
+            transform: translate(100px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+}
